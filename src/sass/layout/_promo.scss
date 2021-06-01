@@ -1,0 +1,24 @@
+.promo {
+	min-height: 100vh;
+	position: relative;
+	padding-top: 30vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url('../images/header-bg.jpg') no-repeat 50% / cover;
+	&__title {
+		font-weight: 500;
+		font-size: 48px;
+		line-height: 60px;
+		color: #fff;
+		text-align: center;
+
+		span {
+			color: $main-color;
+		}
+	}
+	&__subtitle {
+		width: 70%;
+		margin: 30px auto 0;
+		text-align: center;
+		color: #fff;
+	}
+}
