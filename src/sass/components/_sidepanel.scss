@@ -1,8 +1,20 @@
 .sidepanel {
 	position: absolute;
+	// left: -50px;
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
-	height: 340px;
-	z-index: 3;
+	align-items: center;
+	z-index: 1;
+	transform: rotate(-90deg);
+	&__divider {
+		width: 80px;
+		height: 2px;
+		background-color: #fff;
+	}
+	&__text {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 24px;
+		color: #fff;
+	}
 }
