@@ -54,39 +54,71 @@
 		<meta name="msapplication-TileColor" content="#ffffff" />
 		<meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#ffffff" />
-		<!-- /Favicon -->
+		<!-- / Favicon -->
 
 		<link rel="stylesheet" href="css/style.min.css" />
 	</head>
 	<body>
-		<!-- promo -->
+		<!-- Navigation buttons -->
+		<aside class="sidepanel">
+			<div class="sidepanel__text">Соцсети</div>
+			<div class="sidepanel__divider"></div>
+			<a href="#" class="sidepanel__link"><span class="icon-linkedin"></span></a>
+			<a href="#" class="sidepanel__link"><span class="icon-instagram"></span></a>
+			<a href="#" class="sidepanel__link"><span class="icon-telegram"></span></a>
+			<a href="#" class="sidepanel__link"><span class="icon-facebook2"></span></a>
+		</aside>
+		<!-- / Navigation buttons -->
+
+		<!-- Menu -->
+		<div class="menu">
+			<div class="menu__block">
+				<div class="menu__close">&times;</div>
+				<nav>
+					<ul class="menu__list">
+						<li class="menu__link"><a href="#">Обо мне</a></li>
+						<li class="menu__link"><a href="#">Мои услуги</a></li>
+						<li class="menu__link"><a href="#">Мои навыки</a></li>
+						<li class="menu__link"><a href="#">Мои работы</a></li>
+						<li class="menu__link"><a href="#">Цены</a></li>
+						<li class="menu__link"><a href="#">Котакты</a></li>
+					</ul>
+				</nav>
+				<div class="menu__social">
+					<a href="#" class="sidepanel__link"><span class="icon-facebook2"></span></a>
+					<a href="#" class="sidepanel__link"><span class="icon-telegram"></span></a>
+					<a href="#" class="sidepanel__link"><span class="icon-instagram"></span></a>
+					<a href="#" class="sidepanel__link"><span class="icon-linkedin"></span></a>
+				</div>
+			</div>
+			<div class="menu__overlay"></div>
+		</div>
+		<!-- / Menu -->
+
+		<!-- Promo -->
 		<section class="promo">
+			<div class="hamburger">
+				<span></span>
+				<span class="long"></span>
+				<span></span>
+			</div>
 			<div class="container">
 				<h1 class="visually-hidden">Создание сайтов под ключ</h1>
 				<div class="promo__wrapper">
-					<aside class="sidepanel">
-						<!-- <div class="sidepanel__text">Социальные сети</div> -->
-						<div class="sidepanel__divider"></div>
-						<a href="#" class="sidepanel__link"><span class="icon-github"></span></a>
-						<a href="#" class="sidepanel__link"><span class="icon-linkedin"></span></a>
-						<a href="#" class="sidepanel__link"><span class="icon-instagram"></span></a>
-						<a href="#" class="sidepanel__link"><span class="icon-telegram"></span></a>
-						<a href="#" class="sidepanel__link"><span class="icon-facebook2"></span></a>
-					</aside>
 					<div class="promo__title">
 						Привет! Меня зовут
 						<span class="highlight">Тарас Самойлов</span>. <br />
 						Я - web разработчик.
 					</div>
 					<div class="promo__subtitle">
-						Создание "под ключ" красивых продающих сайтов для Вашего бизнеса: лендингов,
-						визиток, порталов, интернет-магазинов.
+						Создаю "под ключ" красивые продающие сайты для бизнеса: лендинги, визитки,
+						порталы, интернет-магазины.
 					</div>
 					<a href="#" class="btn">Мои работы</a>
 				</div>
 			</div>
 		</section>
-		<!-- / promo -->
+		<!-- / Promo -->
 
 		<script src="js/script.min.js"></script>
 	</body>

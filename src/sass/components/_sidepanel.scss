@@ -1,13 +1,14 @@
 .sidepanel {
 	position: absolute;
-	// left: -50px;
+	width: 270px;
+	top: 50vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	z-index: 1;
-	transform: rotate(-90deg);
+	transform: rotate(-90deg) translateY(-78px);
 	&__divider {
-		width: 80px;
+		width: 70px;
 		height: 2px;
 		background-color: #fff;
 	}
