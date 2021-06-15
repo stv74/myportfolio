@@ -16,9 +16,12 @@
 // 4. Layout-related sections
 @import 'layout/promo';
 @import 'layout/menu';
+@import 'layout/about';
 
 // 5. Components
 @import 'components/button';
 @import 'components/sidepanel';
+@import 'components/title';
+@import 'components/divider';
 
 // 6. Page-specific styles
