@@ -44,7 +44,7 @@
 				&::after {
 					content: '';
 					width: 1px;
-					height: 100%;
+					height: calc(100% + 16px);
 					position: absolute;
 					top: -16px;
 					left: -43px;
@@ -54,11 +54,39 @@
 		}
 	}
 	&__item {
+		position: relative;
+		&::before {
+			content: '';
+			height: 1px;
+			width: 43px;
+			top: 48px;
+			left: -43px;
+			position: absolute;
+			background-color: #000;
+		}
 		&-head {
-			padding: 45px 0 0 56px;
+			position: relative;
+			padding: 30px 0 0 56px;
+			h4 {
+				margin-bottom: 0;
+			}
 		}
 		&-body {
-			// padding-left: 50px;
+			margin-top: 12px;
+		}
+		&-icon {
+			position: absolute;
+			top: 30px;
+			left: 0;
+			@include before_circle;
+			img {
+				position: absolute;
+				top: 14px;
+				left: 17px;
+			}
+		}
+		&-subtitle {
+			margin-top: 5px;
 		}
 	}
 }
