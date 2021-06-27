@@ -17,56 +17,61 @@
 	&__wrapper {
 		padding: 60px 10px 0;
 		display: grid;
-		grid-template-columns: repeat(4, 270px);
+		grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+		grid-auto-rows: minmax(270px, auto);
 		gap: 13px;
 	}
 	&__item {
-		width: 270px;
-		height: 270px;
-		padding: 30px;
+		padding: 30px 30px 25px 30px;
 		border: 1px solid #000;
-	}
-	&__img {
-		height: 65px;
-		max-width: 160px;
+		&-title {
+			margin-top: 20px;
+			margin-bottom: 15px;
+		}
+		&-img {
+			display: flex;
+			align-items: center;
+			height: 65px;
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
 	}
 	&__indicators {
 		margin-top: 120px;
 		display: grid;
 		grid-template-columns: repeat(3, 350px);
-		grid-template-rows: repeat(2, 70px);
+		grid-template-rows: repeat(2, minmax(70px, auto));
 		column-gap: 45px;
 		row-gap: 30px;
 	}
 	&__indicator {
 		position: relative;
-		width: 350px;
 
 		@include before_circle;
 		&::before {
 			top: 0;
 		}
-	}
-	&__title-indicator {
-		display: flex;
-		justify-content: space-between;
-		padding-left: 14px;
-		margin-top: 8px;
-	}
-	&__line {
-		&-bg {
-			margin-top: 27px;
-			width: 100%;
-			height: 14px;
-			background: #e8e4de;
-			border-radius: 4px;
+		&-title {
+			display: flex;
+			justify-content: space-between;
+			padding-left: 14px;
+			margin-top: 8px;
 		}
-		&-act {
-			position: absolute;
+		&-line {
+			margin-top: 27px;
+			width: 350px;
 			height: 14px;
-			background: $main-color;
+			background-color: #e8e4de;
 			border-radius: 4px;
-			top: 80%;
+			span {
+				position: absolute;
+				height: 14px;
+				background: $main-color;
+				border-radius: 4px;
+				top: 80%;
+			}
 		}
 	}
 }
