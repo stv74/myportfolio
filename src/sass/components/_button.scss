@@ -8,4 +8,12 @@
 		background: $main-color;
 		border-color: $main-color;
 	}
+	&_form {
+		border: none;
+		background-color: $main-color;
+		color: #fff;
+		&:hover {
+			opacity: 65%;
+		}
+	}
 }
