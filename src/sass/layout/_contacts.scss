@@ -11,6 +11,7 @@
 	&__link {
 		color: #000;
 		font-size: 30px;
+		text-decoration: none;
 		transition: all 0.5s;
 		&:not(:last-child) {
 			letter-spacing: 20px;

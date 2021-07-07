@@ -1,5 +1,9 @@
 body {
 	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
 }
 
 .highlight {
@@ -7,9 +11,9 @@ body {
 	color: $main-color;
 }
 
-.text {
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 18px;
-	color: #000000;
-}
+// .text {
+// 	font-weight: 500;
+// 	font-size: 12px;
+// 	line-height: 18px;
+// 	color: #000000;
+// }

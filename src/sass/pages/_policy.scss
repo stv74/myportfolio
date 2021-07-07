@@ -1,20 +1,35 @@
-a {
-	color: #0d6efd;
-	text-decoration: underline;
-}
-a:hover {
-	color: #0a58ca;
-}
-
-ol {
-	/* убираем стандартную нумерацию */
-	list-style: none;
-	/* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
-	counter-reset: li;
-}
-li:before {
-	/* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
-	counter-increment: li;
-	/* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
-	content: counters(li, '.') '. ';
+.policy {
+	max-width: 992px;
+	margin: 0 auto;
+	padding: 30px 20px;
+	&__external-list,
+	&__nested-list {
+		list-style: none;
+		counter-reset: li;
+		& li::before {
+			counter-increment: li;
+			content: counters(li, '.') '. ';
+			font-weight: 400;
+			font-size: 18px;
+		}
+	}
+	&__external-list {
+		margin-top: 25px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 28px;
+		padding-left: 0;
+	}
+	&__nested-list {
+		margin-top: 25px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 28px;
+	}
+	p {
+		margin-top: 25px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 28px;
+	}
 }

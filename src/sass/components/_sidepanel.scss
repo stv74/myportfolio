@@ -18,4 +18,11 @@
 		line-height: 24px;
 		color: #fff;
 	}
+	&__link {
+		color: #fff;
+		text-decoration: none;
+		&:hover {
+			color: #fff;
+		}
+	}
 }
