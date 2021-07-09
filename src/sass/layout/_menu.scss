@@ -80,16 +80,21 @@
 				border: none;
 			}
 		}
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
 	}
 	&__social {
 		position: absolute;
-		width: 120px;
+		width: 130px;
 		bottom: 50px;
 		left: 50%;
 		transform: translateX(-50%);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		font-size: 20px;
 		a {
 			color: #000;
 		}

@@ -2,34 +2,15 @@
 	max-width: 992px;
 	margin: 0 auto;
 	padding: 30px 20px;
-	&__external-list,
-	&__nested-list {
-		list-style: none;
-		counter-reset: li;
-		& li::before {
-			counter-increment: li;
-			content: counters(li, '.') '. ';
-			font-weight: 400;
-			font-size: 18px;
-		}
-	}
-	&__external-list {
-		margin-top: 25px;
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 28px;
-		padding-left: 0;
-	}
-	&__nested-list {
-		margin-top: 25px;
+	p,
+	ul {
+		margin-top: 20px;
+		margin-bottom: 30px;
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 28px;
 	}
-	p {
-		margin-top: 25px;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 28px;
+	ul {
+		list-style-type: disc;
 	}
 }
