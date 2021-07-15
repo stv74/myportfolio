@@ -5,11 +5,11 @@
 // Подключаем иконочный шрифт для иконок соцсетей
 @font-face {
 	font-family: 'icomoon';
-	src: url('../fonts/icomoon.eot?kgar5i');
-	src: url('../fonts/icomoon.eot?kgar5i#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?kgar5i') format('truetype'),
-		url('../fonts/icomoon.woff?kgar5i') format('woff'),
-		url('../fonts/icomoon.svg?kgar5i#icomoon') format('svg');
+	src: url('../fonts/icomoon.eot?sb442w');
+	src: url('../fonts/icomoon.eot?sb442w#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?sb442w') format('truetype'),
+		url('../fonts/icomoon.woff?sb442w') format('woff'),
+		url('../fonts/icomoon.svg?sb442w#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -28,6 +28,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cross:before {
+	content: '\ea0f';
+}
 .icon-facebook2:before {
 	content: '\ea91';
 }
