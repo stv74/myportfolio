@@ -17,6 +17,9 @@
 	span.long {
 		width: 33px;
 	}
+	@media (max-width: 768px) {
+		right: 20px;
+	}
 }
 
 .menu {
