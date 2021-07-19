@@ -16,6 +16,10 @@
 		transform: translateY(2px);
 		box-shadow: none;
 	}
+	@media (max-width: 576px) {
+		font-size: 16px;
+		padding: 8px 25px;
+	}
 	&_form {
 		border: none;
 		background-color: $main-color;
