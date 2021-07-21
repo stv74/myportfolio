@@ -8,4 +8,7 @@
 	height: 0px;
 	border: 2px solid $main-color;
 	margin: 25px auto 0 auto;
+	@media (max-width: 768px) {
+		margin-top: 0;
+	}
 }
