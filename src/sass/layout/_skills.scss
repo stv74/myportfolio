@@ -1,11 +1,26 @@
 .skills {
 	padding-top: 125px;
+	@media (max-width: 768px) {
+		padding-top: 40px;
+	}
 	&__wrapper {
 		padding: 60px 10px 0;
 		display: grid;
 		grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
 		grid-auto-rows: minmax(270px, auto);
 		gap: 13px;
+		@media (max-width: 1200px) {
+			grid-template: repeat(3, minmax(270px, auto)) / repeat(3, 270px);
+			justify-content: center;
+		}
+		@media (max-width: 992px) {
+			grid-template: repeat(4, minmax(270px, auto)) / repeat(2, 270px);
+			justify-content: center;
+		}
+		@media (max-width: 768px) {
+			grid-template-columns: 270px;
+			padding-top: 20px;
+		}
 	}
 	&__item {
 		padding: 30px 30px 25px 30px;
@@ -31,6 +46,19 @@
 		grid-template-rows: repeat(2, minmax(70px, auto));
 		column-gap: 45px;
 		row-gap: 30px;
+		@media (max-width: 1200px) {
+			grid-template-columns: repeat(2, 350px);
+			grid-template-rows: repeat(3, minmax(70px, auto));
+			justify-content: center;
+		}
+		@media (max-width: 992px) {
+			grid-template-columns: repeat(2, 300px);
+			column-gap: 45px;
+		}
+		@media (max-width: 768px) {
+			grid-template-columns: 300px;
+			margin-top: 40px;
+		}
 	}
 	&__indicator {
 		position: relative;
@@ -51,6 +79,9 @@
 			height: 14px;
 			background-color: #e8e4de;
 			border-radius: 4px;
+			@media (max-width: 992px) {
+				width: 300px;
+			}
 			span {
 				position: absolute;
 				height: 14px;
