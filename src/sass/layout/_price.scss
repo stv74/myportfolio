@@ -1,5 +1,8 @@
 .price {
 	padding-top: 66px;
+	@media (max-width: 768px) {
+		padding-top: 40px;
+	}
 	&__wrapper {
 		margin-top: 60px;
 		padding: 0 50px;
@@ -8,6 +11,21 @@
 		grid-auto-rows: minmax(44px, auto);
 		row-gap: 15px;
 		justify-content: space-between;
+		@media (max-width: 992px) {
+			grid-template-columns: repeat(auto-fit, 350px);
+			padding: 0;
+		}
+		@media (max-width: 992px) {
+			grid-template-columns: repeat(auto-fit, 350px);
+			padding: 0;
+		}
+		@media (max-width: 768px) {
+			margin-top: 40px;
+			justify-content: center;
+		}
+		@media (max-width: 576px) {
+			grid-template-columns: repeat(auto-fit, 295px);
+		}
 	}
 	&__item {
 		padding-left: 25px;
