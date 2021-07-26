@@ -15,10 +15,6 @@
 			grid-template-columns: repeat(auto-fit, 350px);
 			padding: 0;
 		}
-		@media (max-width: 992px) {
-			grid-template-columns: repeat(auto-fit, 350px);
-			padding: 0;
-		}
 		@media (max-width: 768px) {
 			margin-top: 40px;
 			justify-content: center;

@@ -26,5 +26,8 @@
 		&:hover {
 			background-color: $main-color-act;
 		}
+		@media (max-width: 576px) {
+			padding: 13px 26px;
+		}
 	}
 }
